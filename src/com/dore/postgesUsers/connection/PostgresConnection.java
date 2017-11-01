@@ -8,10 +8,10 @@ import java.util.Properties;
 public class PostgresConnection {
 
 	public static Connection getPostgesConnection() throws ClassNotFoundException, SQLException {
-		String hostName = "localhost";
-		String dbName = "postgres";
-		String userName = "postgres";
-		String password = "";
+		String hostName = "localhost:5433";
+		String dbName = "mydb";
+		String userName = "testUser";
+		String password = "123456";
 		return getPostgesConnection(hostName, dbName, userName, password);
 	}
 	
