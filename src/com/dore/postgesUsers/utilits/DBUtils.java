@@ -13,7 +13,7 @@ import com.dore.postgesUsers.beans.User;
 public class DBUtils {
 	
 	public static List<User> queryUsers(Connection connection) throws SQLException {
-		String sql = "SELECT * FROM public.\"Users\";";
+		String sql = "select * from public.\"Users\";";
 		
 		PreparedStatement statement = connection.prepareStatement(sql);
 		ResultSet resultSet = statement.executeQuery();  //Gathering data from table
@@ -23,7 +23,7 @@ public class DBUtils {
 			String name = resultSet.getString("Name");
 			String surname = resultSet.getString("Surname");
 			String login = resultSet.getString("Login");
-			String password = resultSet.getString("Passworg");
+			String password = resultSet.getString("Password");
 			Date birthday = resultSet.getDate("Birthday");
 			User user = new User(); 				// Creating and filling User object
 			user.setId(id);
