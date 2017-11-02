@@ -19,6 +19,8 @@
 			<th>Login</th>
 			<th>Password</th>
 			<th>Birthday</th>
+			<th>Edit</th>
+			<th>Delete</th>
 		</tr>
 		<c:forEach items="${usersList}" var="user">
 			<tr>
@@ -28,8 +30,16 @@
 				<td>${user.login}</td>
 				<td>${user.password}</td>
 				<td>${user.birthday}</td>
+				<td>
+					<a href="editUser?id=${user.id}">Edit</a>
+				</td>
+				<td>
+					<a href="deleteUser?id=${user.id}">Delete</a>
+				</td>
 			</tr>
 		</c:forEach>
 	</table>
+	
+	<a href="createUser">Create user</a>
 </body>
 </html>
