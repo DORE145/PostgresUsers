@@ -22,9 +22,11 @@ import java.util.List;
  */
 @WebServlet("/usersList")
 public class UsersList extends HttpServlet {
-	private static final long serialVersionUID = 1L;
-       
-    public UsersList() {
+	
+	private static final long serialVersionUID = 7792314590345585901L;
+
+
+	public UsersList() {
         super();
     }
 
@@ -34,7 +36,7 @@ public class UsersList extends HttpServlet {
 		List<User> users = null; 
 		
 		try {
-			connection = ConnectionUtils.getConnection();
+			connection = ConnectionUtils.getConnection();	//Receiving information from db 
 			users = DBUtils.queryUsers(connection);
 		} catch (ClassNotFoundException | SQLException e) {
 			e.printStackTrace();
