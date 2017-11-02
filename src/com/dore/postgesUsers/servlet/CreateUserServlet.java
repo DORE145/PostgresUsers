@@ -27,11 +27,11 @@ import com.dore.postgesUsers.utilits.DBUtils;
  * Servlet implementation class CreateUser
  */
 @WebServlet("/createUser")
-public class CreateUser extends HttpServlet {
+public class CreateUserServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 2922132296669720437L;
 
-    public CreateUser() {
+    public CreateUserServlet() {
         super();
     }
 

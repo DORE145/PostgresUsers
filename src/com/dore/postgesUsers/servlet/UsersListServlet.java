@@ -21,12 +21,12 @@ import java.util.List;
  * Servlet implementation class UsersList
  */
 @WebServlet("/usersList")
-public class UsersList extends HttpServlet {
+public class UsersListServlet extends HttpServlet {
 	
 	private static final long serialVersionUID = 7792314590345585901L;
 
 
-	public UsersList() {
+	public UsersListServlet() {
         super();
     }
 
