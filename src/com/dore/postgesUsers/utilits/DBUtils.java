@@ -49,7 +49,7 @@ public class DBUtils {
 			String name = resultSet.getString("Name");
 			String surname = resultSet.getString("Surname");
 			String login = resultSet.getString("Login");
-			String password = resultSet.getString("Passworg");
+			String password = resultSet.getString("Password");
 			Date birthday = resultSet.getDate("Birthday");
 			User user = new User(); 				// Creating and filling User object
 			user.setId(i);
